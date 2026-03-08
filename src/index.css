@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-nylon-bg: var(--bg);
+  --color-nylon-card: var(--card);
+  --color-nylon-accent: var(--accent);
+  --color-nylon-border: var(--border);
+  --color-nylon-text: var(--text);
+  --color-nylon-muted: var(--muted);
+}
+
+:root {
+  --bg: #0A0A0B;
+  --card: #151619;
+  --accent: #00FF41;
+  --border: #2A2C32;
+  --text: #E1E1E6;
+  --muted: #8E9299;
+}
+
+.theme-cyber {
+  --bg: #0F0514;
+  --card: #1A0B2E;
+  --accent: #FF00FF;
+  --border: #3D1255;
+  --text: #F0E6FF;
+  --muted: #A389C4;
+}
+
+.theme-mono {
+  --bg: #000000;
+  --card: #111111;
+  --accent: #FFFFFF;
+  --border: #333333;
+  --text: #EEEEEE;
+  --muted: #777777;
+}
+
+.theme-amber {
+  --bg: #0D0B05;
+  --card: #1A1608;
+  --accent: #FFB000;
+  --border: #3D3212;
+  --text: #FFE0A3;
+  --muted: #A38E5C;
+}
+
+@layer base {
+  body {
+    @apply bg-nylon-bg text-nylon-text font-sans antialiased overflow-hidden;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-nylon-border);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-nylon-muted);
+}
+

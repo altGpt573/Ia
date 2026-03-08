@@ -1,0 +1,7 @@
+{
+  "name": "Remix: Nylon GPT",
+  "description": "A high-performance, mobile-optimized AI assistant with a sleek hardware-inspired interface.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
